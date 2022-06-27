@@ -1,4 +1,4 @@
---cpu Cortex-M4.fp
+--cpu=Cortex-M4.fp
 "..\3_output\system_gd32f4xx.o"
 "..\3_output\gd32f4xx_adc.o"
 "..\3_output\gd32f4xx_can.o"
@@ -36,6 +36,6 @@
 "..\3_output\gd32f450z_eval.o"
 "..\3_output\led.o"
 --library_type=microlib --strict --scatter "..\3_Output\Demo001_led.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "..\3_Output\Demo001_led.map" -o ..\3_Output\Demo001_led.axf

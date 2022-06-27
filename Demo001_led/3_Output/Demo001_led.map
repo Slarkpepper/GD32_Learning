@@ -1,4 +1,4 @@
-Component: ARM Compiler 5.05 update 1 (build 106) Tool: armlink [4d0efa]
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
 
 ==============================================================================
 
@@ -1428,61 +1428,61 @@ Memory Map of the image
 
   Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000005b8, Max: 0x00300000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x000005b0, Max: 0x00300000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000005b0, Max: 0x00300000, ABSOLUTE)
 
-    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x08000000   0x000001ac   Data   RO         5644    RESET               startup_gd32f450_470.o
-    0x080001ac   0x00000000   Code   RO         5870  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x080001ac   0x00000004   Code   RO         5873    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x080001b0   0x00000004   Code   RO         5876    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x080001b4   0x00000000   Code   RO         5878    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x080001b4   0x00000000   Code   RO         5880    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x080001b4   0x00000008   Code   RO         5881    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x080001bc   0x00000000   Code   RO         5883    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x080001bc   0x00000000   Code   RO         5885    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x080001bc   0x00000004   Code   RO         5874    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
-    0x080001c0   0x00000024   Code   RO         5645    .text               startup_gd32f450_470.o
-    0x080001e4   0x00000024   Code   RO         5887    .text               mc_w.l(init.o)
-    0x08000208   0x00000002   Code   RO         5651    i.BusFault_Handler  gd32f4xx_it.o
-    0x0800020a   0x00000002   Code   RO         5652    i.DebugMon_Handler  gd32f4xx_it.o
-    0x0800020c   0x00000002   Code   RO         5653    i.HardFault_Handler  gd32f4xx_it.o
-    0x0800020e   0x00000002   Code   RO         5654    i.MemManage_Handler  gd32f4xx_it.o
-    0x08000210   0x00000002   Code   RO         5655    i.NMI_Handler       gd32f4xx_it.o
-    0x08000212   0x00000020   Code   RO         5751    i.NVIC_SetPriority  systick.o
-    0x08000232   0x00000002   Code   RO         5656    i.PendSV_Handler    gd32f4xx_it.o
-    0x08000234   0x00000002   Code   RO         5657    i.SVC_Handler       gd32f4xx_it.o
-    0x08000236   0x00000004   Code   RO         5658    i.SysTick_Handler   gd32f4xx_it.o
-    0x0800023a   0x00000002   PAD
-    0x0800023c   0x00000090   Code   RO            4    i.SystemInit        system_gd32f4xx.o
-    0x080002cc   0x00000002   Code   RO         5659    i.UsageFault_Handler  gd32f4xx_it.o
-    0x080002ce   0x0000000e   Code   RO         5891    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x080002dc   0x00000002   Code   RO         5892    i.__scatterload_null  mc_w.l(handlers.o)
-    0x080002de   0x0000000e   Code   RO         5893    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x080002ec   0x00000010   Code   RO         5752    i.delay_1ms         systick.o
-    0x080002fc   0x00000014   Code   RO         5753    i.delay_decrement   systick.o
-    0x08000310   0x00000004   Code   RO         2630    i.gpio_bit_reset    gd32f4xx_gpio.o
-    0x08000314   0x00000004   Code   RO         2631    i.gpio_bit_set      gd32f4xx_gpio.o
-    0x08000318   0x00000048   Code   RO         2637    i.gpio_mode_set     gd32f4xx_gpio.o
-    0x08000360   0x00000046   Code   RO         2639    i.gpio_output_options_set  gd32f4xx_gpio.o
-    0x080003a6   0x00000002   PAD
-    0x080003a8   0x000000bc   Code   RO         5852    i.ledInit           led.o
-    0x08000464   0x0000000e   Code   RO         5725    i.main              main.o
-    0x08000472   0x00000002   PAD
-    0x08000474   0x00000020   Code   RO         3426    i.rcu_periph_clock_enable  gd32f4xx_rcu.o
-    0x08000494   0x000000ac   Code   RO            5    i.system_clock_200m_25m_hxtal  system_gd32f4xx.o
-    0x08000540   0x00000004   Code   RO            6    i.system_clock_config  system_gd32f4xx.o
-    0x08000544   0x0000004c   Code   RO         5754    i.systick_config    systick.o
-    0x08000590   0x00000020   Data   RO         5889    Region$$Table       anon$$obj.o
+    0x08000000   0x08000000   0x000001ac   Data   RO         5644    RESET               startup_gd32f450_470.o
+    0x080001ac   0x080001ac   0x00000000   Code   RO         5870  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x080001ac   0x080001ac   0x00000004   Code   RO         5873    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x080001b0   0x080001b0   0x00000004   Code   RO         5876    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x080001b4   0x080001b4   0x00000000   Code   RO         5878    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x080001b4   0x080001b4   0x00000000   Code   RO         5880    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x080001b4   0x080001b4   0x00000008   Code   RO         5881    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x080001bc   0x080001bc   0x00000000   Code   RO         5883    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x080001bc   0x080001bc   0x00000000   Code   RO         5885    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x080001bc   0x080001bc   0x00000004   Code   RO         5874    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x080001c0   0x080001c0   0x00000024   Code   RO         5645    .text               startup_gd32f450_470.o
+    0x080001e4   0x080001e4   0x00000024   Code   RO         5887    .text               mc_w.l(init.o)
+    0x08000208   0x08000208   0x00000002   Code   RO         5651    i.BusFault_Handler  gd32f4xx_it.o
+    0x0800020a   0x0800020a   0x00000002   Code   RO         5652    i.DebugMon_Handler  gd32f4xx_it.o
+    0x0800020c   0x0800020c   0x00000002   Code   RO         5653    i.HardFault_Handler  gd32f4xx_it.o
+    0x0800020e   0x0800020e   0x00000002   Code   RO         5654    i.MemManage_Handler  gd32f4xx_it.o
+    0x08000210   0x08000210   0x00000002   Code   RO         5655    i.NMI_Handler       gd32f4xx_it.o
+    0x08000212   0x08000212   0x00000020   Code   RO         5751    i.NVIC_SetPriority  systick.o
+    0x08000232   0x08000232   0x00000002   Code   RO         5656    i.PendSV_Handler    gd32f4xx_it.o
+    0x08000234   0x08000234   0x00000002   Code   RO         5657    i.SVC_Handler       gd32f4xx_it.o
+    0x08000236   0x08000236   0x00000004   Code   RO         5658    i.SysTick_Handler   gd32f4xx_it.o
+    0x0800023a   0x0800023a   0x00000002   PAD
+    0x0800023c   0x0800023c   0x00000090   Code   RO            4    i.SystemInit        system_gd32f4xx.o
+    0x080002cc   0x080002cc   0x00000002   Code   RO         5659    i.UsageFault_Handler  gd32f4xx_it.o
+    0x080002ce   0x080002ce   0x0000000e   Code   RO         5891    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080002dc   0x080002dc   0x00000002   Code   RO         5892    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080002de   0x080002de   0x0000000e   Code   RO         5893    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080002ec   0x080002ec   0x00000010   Code   RO         5752    i.delay_1ms         systick.o
+    0x080002fc   0x080002fc   0x00000014   Code   RO         5753    i.delay_decrement   systick.o
+    0x08000310   0x08000310   0x00000004   Code   RO         2630    i.gpio_bit_reset    gd32f4xx_gpio.o
+    0x08000314   0x08000314   0x00000004   Code   RO         2631    i.gpio_bit_set      gd32f4xx_gpio.o
+    0x08000318   0x08000318   0x00000048   Code   RO         2637    i.gpio_mode_set     gd32f4xx_gpio.o
+    0x08000360   0x08000360   0x00000046   Code   RO         2639    i.gpio_output_options_set  gd32f4xx_gpio.o
+    0x080003a6   0x080003a6   0x00000002   PAD
+    0x080003a8   0x080003a8   0x000000bc   Code   RO         5852    i.ledInit           led.o
+    0x08000464   0x08000464   0x0000000e   Code   RO         5725    i.main              main.o
+    0x08000472   0x08000472   0x00000002   PAD
+    0x08000474   0x08000474   0x00000020   Code   RO         3426    i.rcu_periph_clock_enable  gd32f4xx_rcu.o
+    0x08000494   0x08000494   0x000000ac   Code   RO            5    i.system_clock_200m_25m_hxtal  system_gd32f4xx.o
+    0x08000540   0x08000540   0x00000004   Code   RO            6    i.system_clock_config  system_gd32f4xx.o
+    0x08000544   0x08000544   0x0000004c   Code   RO         5754    i.systick_config    systick.o
+    0x08000590   0x08000590   0x00000020   Data   RO         5889    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000408, Max: 0x00030000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080005b0, Size: 0x00000408, Max: 0x00030000, ABSOLUTE)
 
-    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x00000004   Data   RW            7    .data               system_gd32f4xx.o
-    0x20000004   0x00000004   Data   RW         5755    .data               systick.o
-    0x20000008   0x00000400   Zero   RW         5642    STACK               startup_gd32f450_470.o
+    0x20000000   0x080005b0   0x00000004   Data   RW            7    .data               system_gd32f4xx.o
+    0x20000004   0x080005b4   0x00000004   Data   RW         5755    .data               systick.o
+    0x20000008        -       0x00000400   Zero   RW         5642    STACK               startup_gd32f450_470.o
 
 
 ==============================================================================
@@ -1492,17 +1492,17 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       150          0          0          0          0       2802   gd32f4xx_gpio.o
-        20          0          0          0          0       4334   gd32f4xx_it.o
-        32          6          0          0          0        562   gd32f4xx_rcu.o
-       188          8          0          0          0        566   led.o
-        14          0          0          0          0        507   main.o
-        36          8        428          0       1024        860   startup_gd32f450_470.o
-       320         30          0          4          0      36439   system_gd32f4xx.o
-       144         14          0          4          0      29126   systick.o
+       150          0          0          0          0       2886   gd32f4xx_gpio.o
+        20          0          0          0          0       4518   gd32f4xx_it.o
+        32          6          0          0          0        582   gd32f4xx_rcu.o
+       188          8          0          0          0        586   led.o
+        14          0          0          0          0        527   main.o
+        36          8        428          0       1024        880   startup_gd32f450_470.o
+       320         30          0          4          0      36587   system_gd32f4xx.o
+       144         14          0          4          0      29270   systick.o
 
     ----------------------------------------------------------------------
-       910         66        460          8       1024      75196   Object Totals
+       910         66        460          8       1024      75836   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          6          0          0          0          0          0   (incl. Padding)
 
@@ -1541,8 +1541,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-       996         82        460          8       1024      73568   Grand Totals
-       996         82        460          8       1024      73568   ELF Image Totals
+       996         82        460          8       1024      74208   Grand Totals
+       996         82        460          8       1024      74208   ELF Image Totals
        996         82        460          8          0          0   ROM Totals
 
 ==============================================================================
