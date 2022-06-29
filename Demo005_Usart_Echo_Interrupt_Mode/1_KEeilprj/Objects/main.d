@@ -1,0 +1,11 @@
+.\objects\main.o: ..\2_Source\User\main.c
+.\objects\main.o: D:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include\gd32f4xx.h
+.\objects\main.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\core_cm4.h
+.\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_version.h
+.\objects\main.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\main.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\main.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include\mpu_armv7.h
+.\objects\main.o: D:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include\system_gd32f4xx.h
+.\objects\main.o: D:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include\gd32f4xx_libopt.h
+.\objects\main.o: .\RTE\_UsartInterrupt\RTE_Components.h
